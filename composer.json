@@ -1,5 +1,5 @@
 {
-    "name": "alhimik1986/php-excel-templator",
+    "name": "topdelivery/php-excel-templator",
     "description": "PHP Spreadsheet extension for generating excel files from template",
     "keywords": ["php", "excel", "template", "templator", "templater"],
     "license": "MIT",
@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "alhimik1986\\PhpExcelTemplator\\": "src"
+            "topdelivery\\PhpExcelTemplator\\": "src"
         }
     },
     "require": {

@@ -1,11 +1,11 @@
 # PHP Excel Templator
 
-[![Latest Stable Version](https://poser.pugx.org/alhimik1986/php-excel-templator/v/stable)](https://packagist.org/packages/alhimik1986/php-excel-templator)
-[![Latest Unstable Version](https://poser.pugx.org/alhimik1986/php-excel-templator/v/unstable)](https://packagist.org/packages/alhimik1986/php-excel-templator)
-[![License](https://poser.pugx.org/alhimik1986/php-excel-templator/license)](https://packagist.org/packages/alhimik1986/php-excel-templator)
-[![Total Downloads](https://poser.pugx.org/alhimik1986/php-excel-templator/downloads)](https://packagist.org/packages/alhimik1986/php-excel-templator)
-[![Monthly Downloads](https://poser.pugx.org/alhimik1986/php-excel-templator/d/monthly)](https://packagist.org/packages/alhimik1986/php-excel-templator)
-[![Daily Downloads](https://poser.pugx.org/alhimik1986/php-excel-templator/d/daily)](https://packagist.org/packages/alhimik1986/php-excel-templator)
+[![Latest Stable Version](https://poser.pugx.org/topdelivery/php-excel-templator/v/stable)](https://packagist.org/packages/topdelivery/php-excel-templator)
+[![Latest Unstable Version](https://poser.pugx.org/topdelivery/php-excel-templator/v/unstable)](https://packagist.org/packages/topdelivery/php-excel-templator)
+[![License](https://poser.pugx.org/topdelivery/php-excel-templator/license)](https://packagist.org/packages/topdelivery/php-excel-templator)
+[![Total Downloads](https://poser.pugx.org/topdelivery/php-excel-templator/downloads)](https://packagist.org/packages/topdelivery/php-excel-templator)
+[![Monthly Downloads](https://poser.pugx.org/topdelivery/php-excel-templator/d/monthly)](https://packagist.org/packages/topdelivery/php-excel-templator)
+[![Daily Downloads](https://poser.pugx.org/topdelivery/php-excel-templator/d/daily)](https://packagist.org/packages/topdelivery/php-excel-templator)
 
 PHP Excel модуль, позволяющий экспортировать excel-файлы из excel-шаблона.
 Теперь не нужно при помощи кода с нуля создавать excel-файлы, прописывать в нём стили и т. д.
@@ -22,7 +22,7 @@ PHP Excel модуль, позволяющий экспортировать exce
 
 Код будет выглядеть следующим образом:
 ```
-use alhimik1986\PhpExcelTemplator\PhpExcelTemplator;
+use topdelivery\PhpExcelTemplator\PhpExcelTemplator;
 require_once('vendor/autoload.php'); // если используется чистый код без фреймворка
 
 PhpExcelTemplator::saveToFile('./template.xlsx', './exported_file.xlsx', [
@@ -51,7 +51,7 @@ PhpExcelTemplator::saveToFile('./template.xlsx', './exported_file.xlsx', [
 ## УСТАНОВКА:
 
 ```
-$ composer require alhimik1986/php-excel-templator
+$ composer require topdelivery/php-excel-templator
 ```
 
 ### Правила именования шаблонных переменных
@@ -72,10 +72,10 @@ $param['[[var_name]]'] = [['text 1', 'text 2', 'text 3']];
 В нём тип данных (например: строка, одномерный массив или двумерный массив) распознаётся автоматически и подставляется нужный сеттер.
 Но если мы хотим использовать определённый сеттер, тогда тот же самый код будет выглядеть следующим образом:
 ```
-use alhimik1986\PhpExcelTemplator\PhpExcelTemplator;
-use alhimik1986\PhpExcelTemplator\params\ExcelParam;
-use alhimik1986\PhpExcelTemplator\params\CallbackParam;
-use alhimik1986\PhpExcelTemplator\setters\CellSetterStringValue;
+use topdelivery\PhpExcelTemplator\PhpExcelTemplator;
+use topdelivery\PhpExcelTemplator\params\ExcelParam;
+use topdelivery\PhpExcelTemplator\params\CallbackParam;
+use topdelivery\PhpExcelTemplator\setters\CellSetterStringValue;
 
 require_once('vendor/autoload.php'); // если используется чистый код без фреймворка
 
@@ -99,8 +99,8 @@ PhpExcelTemplator::saveToFile('./template.xlsx', './exported_file.xlsx', $params
 ## Как задать стили без использования сеттеров?
 В большинстве случаев задавать сеттеры явно - не так удобно. Хочется использовать минимум кода. Поэтому есть возможность задать стили без использования сеттеров:
 ```
-use alhimik1986\PhpExcelTemplator\PhpExcelTemplator;
-use alhimik1986\PhpExcelTemplator\params\CallbackParam;
+use topdelivery\PhpExcelTemplator\PhpExcelTemplator;
+use topdelivery\PhpExcelTemplator\params\CallbackParam;
 require_once('vendor/autoload.php'); // если используется чистый код без фреймворка
 
 $params = [

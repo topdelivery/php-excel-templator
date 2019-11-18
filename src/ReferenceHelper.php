@@ -1,6 +1,6 @@
 <?php
 
-namespace alhimik1986\PhpExcelTemplator;
+namespace topdelivery\PhpExcelTemplator;
 
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use PhpOffice\PhpSpreadsheet\Cell\DataType;

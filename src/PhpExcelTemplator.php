@@ -1,6 +1,6 @@
 <?php
 
-namespace alhimik1986\PhpExcelTemplator;
+namespace topdelivery\PhpExcelTemplator;
 
 use Exception;
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -8,11 +8,11 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use PhpOffice\PhpSpreadsheet\Cell\DataType;
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use alhimik1986\PhpExcelTemplator\setters\CellSetterStringValue;
-use alhimik1986\PhpExcelTemplator\setters\CellSetterArrayValue;
-use alhimik1986\PhpExcelTemplator\setters\CellSetterArray2DValue;
-use alhimik1986\PhpExcelTemplator\params\ExcelParam;
-use alhimik1986\PhpExcelTemplator\params\SetterParam;
+use topdelivery\PhpExcelTemplator\setters\CellSetterStringValue;
+use topdelivery\PhpExcelTemplator\setters\CellSetterArrayValue;
+use topdelivery\PhpExcelTemplator\setters\CellSetterArray2DValue;
+use topdelivery\PhpExcelTemplator\params\ExcelParam;
+use topdelivery\PhpExcelTemplator\params\SetterParam;
 use PhpOffice\PhpSpreadsheet\Writer\IWriter;
 
 class PhpExcelTemplator

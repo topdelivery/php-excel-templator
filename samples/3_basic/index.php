@@ -2,11 +2,11 @@
 
 require( __DIR__ . '/../Bootstrap.php');
 
-use alhimik1986\PhpExcelTemplator\PhpExcelTemplator;
-use alhimik1986\PhpExcelTemplator\params\ExcelParam;
-use alhimik1986\PhpExcelTemplator\setters\CellSetterStringValue;
-use alhimik1986\PhpExcelTemplator\setters\CellSetterArrayValue;
-use alhimik1986\PhpExcelTemplator\setters\CellSetterArray2DValue;
+use topdelivery\PhpExcelTemplator\PhpExcelTemplator;
+use topdelivery\PhpExcelTemplator\params\ExcelParam;
+use topdelivery\PhpExcelTemplator\setters\CellSetterStringValue;
+use topdelivery\PhpExcelTemplator\setters\CellSetterArrayValue;
+use topdelivery\PhpExcelTemplator\setters\CellSetterArray2DValue;
 
 $templateFile = './template.xlsx';
 $fileName = './exported_file.xlsx';
